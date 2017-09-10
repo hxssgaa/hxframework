@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans default-lazy-init="false"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <!--<bean id="dbPropertyConfigurer"-->
+          <!--class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">-->
+        <!--<property name="locations">-->
+            <!--<list>-->
+                <!--<value>classpath:db.properties</value>-->
+            <!--</list>-->
+        <!--</property>-->
+        <!--<property name="ignoreUnresolvablePlaceholders" value="true" />-->
+    <!--</bean>-->
+    <!--<bean id="sharedMemcachedClient"-->
+          <!--class="net.spy.memcached.spring.MemcachedClientFactoryBean">-->
+        <!--<property name="servers" value="${memcached_address_list}" />-->
+        <!--<property name="protocol" value="BINARY" />-->
+        <!--<property name="transcoder">-->
+            <!--<bean class="net.spy.memcached.transcoders.SerializingTranscoder">-->
+                <!--<property name="compressionThreshold" value="16384" />-->
+            <!--</bean>-->
+        <!--</property>-->
+        <!--<property name="maxReconnectDelay" value="60" />-->
+        <!--<property name="opTimeout" value="10000" />-->
+        <!--<property name="timeoutExceptionThreshold" value="900" />-->
+        <!--<property name="hashAlg">-->
+            <!--<value type="net.spy.memcached.DefaultHashAlgorithm">KETAMA_HASH</value>-->
+        <!--</property>-->
+        <!--<property name="locatorType" value="CONSISTENT" />-->
+        <!--<property name="failureMode" value="Redistribute" />-->
+        <!--<property name="useNagleAlgorithm" value="false" />-->
+    <!--</bean>-->
+
+    <!--&lt;!&ndash;&lt;!&ndash;mongodb 配置信息 &ndash;&gt;&ndash;&gt;-->
+    <!--<bean id="mongoClient" class="com.mongodb.MongoClient">-->
+        <!--<constructor-arg index="0" ref="mongodbUri" />-->
+    <!--</bean>-->
+
+    <!--<bean id="mongodbUri" class="com.mongodb.MongoClientURI">-->
+        <!--<constructor-arg index="0" value="${mongo_db_url}" />-->
+    <!--</bean>-->
+    <!--<bean id="morphiaBean" class="com.hxdavid.hxframework.commons.mongo.MorphiaBean">-->
+        <!--<property name="mongo" ref="mongoClient" />-->
+        <!--<property name="dbName" value="hx-personal" />-->
+    <!--</bean>-->
+
+</beans>
